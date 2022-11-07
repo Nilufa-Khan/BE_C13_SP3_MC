@@ -37,6 +37,7 @@ public class MusicServiceImpl implements MusicService{
         return result;
     }
 
+
     @Override
     public List<Music> getAllMusicByTrackRating(int trackRating) throws MusicNotFound {
         if(musicRepository.findAllMusicFromTrackRating(trackRating).isEmpty()){
